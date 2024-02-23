@@ -11,3 +11,7 @@ func AND[n T](a, b n) n {
 func OR[n T](a, b n) n {
 	return a | b
 }
+
+func NAND[n T](a, b n) n {
+	return ^(a & b)
+}
