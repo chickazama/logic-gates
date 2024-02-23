@@ -19,3 +19,7 @@ func NAND[n T](a, b n) n {
 func NOR[n T](a, b n) n {
 	return ^(a | b)
 }
+
+func XNOR[n T](a, b n) n {
+	return (a & ^b) | (^a & b)
+}
