@@ -7,3 +7,7 @@ type T interface {
 func AND[n T](a, b n) n {
 	return a & b
 }
+
+func OR[n T](a, b n) n {
+	return a | b
+}
