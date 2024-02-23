@@ -23,3 +23,7 @@ func NOR[n T](a, b n) n {
 func XOR[n T](a, b n) n {
 	return (a & ^b) | (^a & b)
 }
+
+func XNOR[n T](a, b n) n {
+	return (a & b) | (^a & ^b)
+}
